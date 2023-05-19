@@ -4,7 +4,7 @@ import requests
 import urllib
 import urllib3
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
-cookie = {'PHPSESSID':'ct1gg6nnpjor8g69hcq8tuavtu'}
+cookie = {'PHPSESSID':'Cookie'}
 def get_len():
     pw_len = 1
     index = 1
