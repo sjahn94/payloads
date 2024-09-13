@@ -2,9 +2,20 @@
 <head></head>
 <body>
 	<script>
-		fetch("https://fjcnrwy.request.dreamhack.games").then((response) => 
-			console.log(response)
-		);
+		const xhr = new XMLHttpRequest(); // XMLHttpRequest 객체 생성
+xhr.open('GET', 'https://fjcnrwy.request.dreamhack.games'); // HTTP 요청 초기화
+xhr.setRequestHeader('content-type','application/json'); // HTTP 요청 헤더 설정
+xhr.send(); // HTTP 요청 전송
+
+Xhr.onreadystatechange = () => {
+    if(xhr.readyState !== XMLHttpRequest.DONE) return;
+    
+    if(xhr.status === 200){
+        console.log(JSON.parse(xhr.response));
+    }else{
+        console.log('ERROR', xhr.status, xhr.statusText);
+    }
+}
 	</script>
 </body>
 </html>
