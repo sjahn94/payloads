@@ -7,7 +7,7 @@ xhr.open('GET', 'https://nlsokpw.request.dreamhack.games'); // HTTP 요청 초�
 xhr.setRequestHeader('content-type','application/json'); // HTTP 요청 헤더 설정
 xhr.send(); // HTTP 요청 전송
 
-Xhr.onreadystatechange = () => {
+xhr.onreadystatechange = () => {
     if(xhr.readyState !== XMLHttpRequest.DONE) return;
     
     if(xhr.status === 200){
